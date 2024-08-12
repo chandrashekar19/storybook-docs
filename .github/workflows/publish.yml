@@ -18,3 +18,8 @@ jobs:
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+      - name: Upload npm debug log
+        uses: actions/upload-artifact@v3
+        with:
+          name: npm-debug-log
+          path: /home/runner/.npm/_logs/*.log
