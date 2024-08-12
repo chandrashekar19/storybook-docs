@@ -1,5 +1,5 @@
 {
-  "name": "react-storybook-documentation",
+  "name": "storybook-docs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,11 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chandrashekar19/storybook-docs.git"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
