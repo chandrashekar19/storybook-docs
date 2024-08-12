@@ -1,8 +1,6 @@
-name: Npm Publish
+name: "publish npm"
 
-on:
-  release:
-    types: [published]
+on: push
 
 jobs:
   build:
