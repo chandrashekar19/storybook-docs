@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:chandrashekar19/storybook-docs.git"
+    "url": "git+ssh://git@github.com/chandrashekar19/storybook-docs.git"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
