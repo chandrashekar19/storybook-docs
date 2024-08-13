@@ -5,6 +5,13 @@
   "description": "Design System Library which drives the Rayvector products",
   "main": "dist/storybook-ui.umd.cjs",
   "module": "dist/storybook-ui.js",
+  "browser": "dist/storybook-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/storybook-ui.js",
+      "require": "./dist/storybook-ui.umd.cjs"
+    }
+  },
   "files": [
     "dist",
     "styles"
