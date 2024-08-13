@@ -1,6 +1,6 @@
 {
-  "name": "storybook-docs",
-  "version": "0.0.0",
+  "name": "rayvector-ui-docs",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
