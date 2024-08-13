@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "type": "module",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
