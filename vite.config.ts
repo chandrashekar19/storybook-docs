@@ -1,7 +1,7 @@
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
-
+import dts from "vite-plugin-dts";
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
@@ -11,7 +11,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, "./src/index.tsx"),
+      entry: path.resolve(__dirname, "./src/components/index.ts"),
       name: "StorybookDocs",
       fileName: "storybook-ui",
     },
@@ -26,5 +26,5 @@ export default defineConfig({
     },
     sourcemap: true,
   },
-  plugins: [react()],
+  plugins: [react(), dts({ rollupTypes: true })],
 });
