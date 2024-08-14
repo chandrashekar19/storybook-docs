@@ -1,6 +1,6 @@
 {
   "name": "storybook-components-docs",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "description": "Design System Library which drives the Rayvector products",
   "files": [
