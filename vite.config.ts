@@ -12,7 +12,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "./src/components/index.ts"),
-      name: "StorybookDocs",
+      name: "StorybookUI",
       fileName: "storybook-ui",
     },
     rollupOptions: {
@@ -26,5 +26,5 @@ export default defineConfig({
     },
     sourcemap: true,
   },
-  plugins: [react(), dts({ rollupTypes: true })],
+  plugins: [react(), dts({ rollupTypes: false })],
 });
