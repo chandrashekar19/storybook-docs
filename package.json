@@ -1,8 +1,7 @@
 {
   "name": "storybook-components-docs",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "module",
-  "description": "Design System Library which drives the Rayvector products",
   "files": [
     "dist"
   ],
@@ -14,13 +13,10 @@
       "require": "./dist/storybook-ui.umd.cjs"
     }
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -45,8 +41,7 @@
     "clsx": "^2.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.4.0",
-    "vite-plugin-dts": "^4.0.2"
+    "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.6.1",
@@ -62,6 +57,8 @@
     "@storybook/test": "^8.2.8",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.8.0",
@@ -74,11 +71,7 @@
     "tailwindcss": "^3.4.9",
     "typescript": "^5.4.2",
     "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.0.2",
     "vite-tsconfig-paths": "^5.0.1"
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
   }
 }
