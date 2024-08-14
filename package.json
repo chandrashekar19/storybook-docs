@@ -1,17 +1,17 @@
 {
   "name": "storybook-components-docs",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "description": "Design System Library which drives the Rayvector products",
   "files": [
     "dist"
   ],
-  "main": "dist/storybook-ui-umd.cjs",
+  "main": "dist/storybook-ui.umd.cjs",
   "module": "dist/storybook-ui.js",
   "exports": {
     ".": {
       "import": "./dist/storybook-ui.js",
-      "require": "./dist/storybook-ui-umd.cjs"
+      "require": "./dist/storybook-ui.umd.cjs"
     }
   },
   "publishConfig": {
