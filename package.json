@@ -1,6 +1,6 @@
 {
   "name": "storybook-components-docs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "files": [
     "dist"
@@ -10,7 +10,7 @@
   "exports": {
     ".": {
       "import": "./dist/storybook-ui.js",
-      "require": "./dist/storybook-ui-umd.cjs"
+      "require": "./dist/storybook-ui.umd.cjs"
     }
   },
   "scripts": {
