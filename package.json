@@ -5,8 +5,8 @@
   "files": [
     "dist"
   ],
-  "main": "dist/storybook-ui-umd.cjs",
-  "module": "dist/storybook-ui.js",
+  "main": "./dist/storybook-ui.umd.cjs",
+  "module": "./dist/storybook-ui.js",
   "exports": {
     ".": {
       "import": "./dist/storybook-ui.js",
